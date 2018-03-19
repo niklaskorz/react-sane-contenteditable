@@ -8,6 +8,7 @@ const propTypes = {
   maxLength: PropTypes.number,
   multiLine: PropTypes.bool,
   onChange: PropTypes.func,
+  onKeyDown: PropTypes.func,
   sanitise: PropTypes.bool,
   tagName: PropTypes.string,
 };
@@ -103,8 +104,12 @@ class ContentEditable extends Component {
   }
 
   _onKeyDown = (ev) => {
-    const { maxLength, multiLine } = this.props;
+    const { maxLength, multiLine, onKeyDown } = this.props;
     const value = this._element.innerText;
+
+    if (onKeyDown) {
+      onKeyDown(ev);
+    }
 
     // return key
     if (!multiLine && ev.keyCode === 13) {

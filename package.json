@@ -1,15 +1,16 @@
 {
-  "name": "react-sane-contenteditable",
-  "version": "1.1.4",
+  "name": "react-saner-contenteditable",
+  "version": "1.2.0",
   "description": "React component with sane defaults to make any element contentEditable",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashleyw/react-sane-contenteditable.git"
+    "url": "git+https://github.com/niklaskorz/react-sane-contenteditable.git"
   },
   "author": "Ashley Williams <hi@ashleyw.co.uk>",
   "contributors": [
-    "Raphael Silva Cavalcanti"
+    "Raphael Silva Cavalcanti",
+    "Niklas Korz"
   ],
   "license": "MIT",
   "dependencies": {
